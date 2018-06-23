@@ -1,0 +1,54 @@
+@import 'variables.scss';
+.header {
+    position: fixed;
+    width: 100%;
+}
+
+.menu-container {
+    height: 60px;
+    line-height: 60px;
+    background-color: $color-header-bg;
+}
+
+.logo-wrapper {
+    float: left;
+    height: 60px;
+    width: 20%;
+    .logo-link {
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        .logo-img {
+            margin: 11px 0 0 24px;
+        }
+    }
+}
+
+.menu-wrapper {
+    float: right;
+}
+
+.menu {
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    .menu-item {
+        float: left;
+        margin-right: 38px;
+        &.selected {
+            .menu-link {
+                color: $color-header-menu-selected-text;
+            }
+        }
+        &:last-child {
+            margin-right: 48px;
+        }
+        .menu-link {
+            font-size: $font-header-size;
+            color: $color-header-menu-text;
+            text-decoration: none;
+        }
+    }
+}

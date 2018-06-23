@@ -1,5 +1,17 @@
+@import 'variables.scss';
 html,
 body {
+    position: relative;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
+
+.clear:before,
+.clear:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+@import 'menu.scss';
