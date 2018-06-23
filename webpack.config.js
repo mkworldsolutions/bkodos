@@ -3,11 +3,11 @@ const webpack = require("webpack");
 module.exports = {
     entry: {
         master: [
-            "./js/master.js"
+            "./src/js/master.js"
         ]
     },
     output: {
-        path: __dirname + "/js",
+        path: __dirname + "/src/js",
         filename: "[name].min.js"
     },
     module: {
