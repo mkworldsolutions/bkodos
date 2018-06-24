@@ -1,0 +1,20 @@
+@import 'variables.scss';
+.section-a-mod {
+    height: 80%;
+    margin-top: 60px;
+    background: bottom / cover no-repeat url('/images/landinga1mod.jpg');
+}
+
+.landing-text-wrapper {
+    position: absolute;
+    margin: 63px 0 0 127px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    .landing-text {
+        font-size: $font-landingA1Mod-size;
+        color: $color-landingA1Mod-text;
+        .landing-text-underline {
+            text-decoration: underline;
+        }
+    }
+}
