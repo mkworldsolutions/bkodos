@@ -79,4 +79,50 @@ body {
     .landing-text-wrapper .landing-text .landing-text-underline {
       text-decoration: underline; }
 
+.section-references {
+  position: relative;
+  background-color: #0b0a13;
+  opacity: .7; }
+
+.references-container {
+  padding: 20px; }
+
+.reference-page-left,
+.reference-page-right {
+  position: absolute;
+  width: 24px;
+  cursor: pointer; }
+
+.reference-page-left {
+  left: 10px; }
+
+.reference-page-right {
+  right: 10px; }
+
+.reference-item {
+  float: left;
+  width: 50%; }
+  .reference-item .reference-item-padder {
+    padding: 20px; }
+  .reference-item .reference-img {
+    float: left;
+    width: 25%; }
+  .reference-item .reference-info {
+    float: left;
+    width: 75%; }
+
+.reference-info .reference-name {
+  font-size: 16px;
+  color: #e3e8ef;
+  letter-spacing: 0.2px;
+  margin-bottom: 3px; }
+.reference-info .reference-position {
+  font-size: 24px;
+  color: #0d75c1;
+  margin-bottom: 11px; }
+.reference-info .reference-rec {
+  font-size: 12px;
+  color: #e3e8ef;
+  letter-spacing: 0.4px; }
+
 /*# sourceMappingURL=master.min.css.map */
