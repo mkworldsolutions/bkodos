@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("fonts/Roboto-Light.ttf") format("truetype"); }
+body {
+  font-family: "Roboto"; }
+
 html,
 body {
   position: relative;
@@ -13,7 +23,8 @@ body {
 
 .header {
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  top: 0; }
 
 .menu-container {
   height: 60px;
@@ -22,6 +33,7 @@ body {
 
 .logo-wrapper {
   float: left;
+  height: 60px;
   width: 20%; }
   .logo-wrapper .logo-link {
     display: inline-block;
@@ -50,5 +62,21 @@ body {
       font-size: 24px;
       color: #e3e8ef;
       text-decoration: none; }
+
+.section-a-mod {
+  height: 80%;
+  margin-top: 60px;
+  background: bottom/cover no-repeat url("/images/landinga1mod.jpg"); }
+
+.landing-text-wrapper {
+  position: absolute;
+  margin: 63px 0 0 127px;
+  font-weight: 300;
+  letter-spacing: -0.5px; }
+  .landing-text-wrapper .landing-text {
+    font-size: 60px;
+    color: #e3e8ef; }
+    .landing-text-wrapper .landing-text .landing-text-underline {
+      text-decoration: underline; }
 
 /*# sourceMappingURL=master.min.css.map */
