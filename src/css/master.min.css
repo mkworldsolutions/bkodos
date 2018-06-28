@@ -24,7 +24,8 @@ body {
 .header {
   position: fixed;
   width: 100%;
-  top: 0; }
+  top: 0;
+  z-index: 100; }
 
 .menu-container {
   height: 60px;
@@ -85,32 +86,40 @@ body {
   opacity: .7; }
 
 .references-container {
-  padding: 20px; }
+  padding: 24px 0; }
+  .references-container .reference-pager {
+    float: left;
+    width: 5%; }
+  .references-container .references-wrapper {
+    float: left;
+    width: 90%; }
 
-.reference-page-left,
-.reference-page-right {
-  position: absolute;
-  width: 24px;
+.reference-pager {
+  text-align: center;
   cursor: pointer; }
-
-.reference-page-left {
-  left: 10px; }
-
-.reference-page-right {
-  right: 10px; }
+  .reference-pager svg {
+    width: 24px; }
+    .reference-pager svg path {
+      fill: #0d75c1; }
+  .reference-pager.disable svg path {
+    fill: #858489; }
 
 .reference-item {
   float: left;
   width: 50%; }
-  .reference-item .reference-item-padder {
-    padding: 20px; }
-  .reference-item .reference-img {
+  .reference-item .reference-img-wrapper {
     float: left;
     width: 25%; }
   .reference-item .reference-info {
     float: left;
     width: 75%; }
 
+.reference-img-wrapper .reference-image {
+  width: 115px;
+  border-radius: 115px; }
+
+.reference-info .reference-info-padder {
+  padding-right: 24px; }
 .reference-info .reference-name {
   font-size: 16px;
   color: #e3e8ef;
@@ -124,5 +133,38 @@ body {
   font-size: 12px;
   color: #e3e8ef;
   letter-spacing: 0.4px; }
+
+.case-study-container {
+  margin: 60px 0 0 44px; }
+
+.case-study-wrapper:nth-child(2) {
+  margin-top: 81px; }
+
+.case-study-header .case-study-title {
+  font-size: 34px;
+  font-weight: 400;
+  color: #0D0A10;
+  letter-spacing: -0.3px; }
+.case-study-header .case-study-title-underline {
+  margin: 7px 0 8px 0;
+  height: 1px;
+  width: 272px;
+  background-color: #0D0A10; }
+
+.case-study-item-wrapper .case-study-item {
+  float: left;
+  width: 33.33%; }
+
+.case-study-link {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  color: #0D0A10; }
+
+.case-study-tagline {
+  margin-top: 16px; }
+  .case-study-tagline .case-study-tag-break svg {
+    width: 8px;
+    margin: 0 8px; }
 
 /*# sourceMappingURL=master.min.css.map */
