@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import Menu from '../build/Menu/Menu';
 import LandingA1Mod from '../build/LandingA1Mod/LandingA1Mod';
 import References from '../build/References/References';
+import CaseStudies from '../build/CaseStudies/CaseStudies';
 
 (() => {
     // render menu
@@ -27,6 +28,14 @@ import References from '../build/References/References';
         render(
             <References />,
             references
+        )
+    }
+    // render case studies
+    const caseStudy = document.getElementById('case-study');
+    if (caseStudy !== null) {
+        render(
+            <CaseStudies />,
+            caseStudy
         )
     }
 })();
