@@ -5,31 +5,35 @@
 }
 
 .references-container {
-    padding: 20px;
+    padding: 24px 0;
+    .reference-pager {
+        float: left;
+        width: 5%;
+    }
+    .references-wrapper {
+        float: left;
+        width: 90%;
+    }
 }
 
-.reference-page-left,
-.reference-page-right {
-    position: absolute;
-    width: 24px;
+.reference-pager {
+    text-align: center;
     cursor: pointer;
-}
-
-.reference-page-left {
-    left: 10px;
-}
-
-.reference-page-right {
-    right: 10px;
+    svg {
+        width: 24px;
+        path {
+            fill: #0d75c1; // FIX ME - update with a good enabled color + variable
+        }
+    }
+    &.disable svg path {
+        fill: #858489; // FIX ME - update with a good disable color + variable
+    }
 }
 
 .reference-item {
     float: left;
     width: 50%;
-    .reference-item-padder {
-        padding: 20px;
-    }
-    .reference-img {
+    .reference-img-wrapper {
         float: left;
         width: 25%;
     }
@@ -39,7 +43,17 @@
     }
 }
 
+.reference-img-wrapper {
+    .reference-image {
+        width: 115px;
+        border-radius: 115px;
+    }
+}
+
 .reference-info {
+    .reference-info-padder {
+        padding-right: 24px;
+    }
     .reference-name {
         font-size: 16px;
         color: #e3e8ef;
