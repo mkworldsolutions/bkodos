@@ -1,0 +1,49 @@
+@import 'variables.scss';
+.case-study-container {
+    margin: 60px 0 0 44px;
+}
+
+.case-study-wrapper {
+    &:nth-child(2) {
+        margin-top: 81px;
+    }
+}
+
+.case-study-header {
+    .case-study-title {
+        font-size: 34px;
+        font-weight: 400;
+        color: #0D0A10;
+        letter-spacing: -0.3px;
+    }
+    .case-study-title-underline {
+        margin: 7px 0 8px 0;
+        height: 1px;
+        width: 272px;
+        background-color: #0D0A10;
+    }
+}
+
+.case-study-item-wrapper {
+    .case-study-item {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+.case-study-link {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    color: #0D0A10;
+}
+
+.case-study-tagline {
+    margin-top: 16px;
+    .case-study-tag-break {
+        svg {
+            width: 8px;
+            margin: 0 8px;
+        }
+    }
+}
