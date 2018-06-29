@@ -66,16 +66,17 @@ class CaseStudies extends Component {
                                         parentCase.Content.map((caseStudy, key) => {
                                             return (
                                                 <div className='case-study-item' key={key}>
-                                                    <a href={caseStudy.Url} className='case-study-link'>
-                                                        <div className='case-study-image-wrapper'>
+
+                                                    <div className='case-study-image-wrapper'>
+                                                        <a href={caseStudy.Url} className='case-study-link'>
                                                             <img className='case-study-img' src={caseStudy.Image} alt={caseStudy.Name} />
-                                                        </div>
-                                                        <div className='case-study-tagline'>
-                                                            <span className='case-study-name'>{caseStudy.Name}</span>
-                                                            <i className='case-study-tag-break'>{this.getDotSvg()}</i>
-                                                            <span className='case-study-type'>{caseStudy.Type}</span>
-                                                        </div>
-                                                    </a>
+                                                        </a>
+                                                    </div>
+                                                    <div className='case-study-tagline clear'>
+                                                        <span className='case-study-name'>{caseStudy.Name}</span>
+                                                        <i className='case-study-tag-break'>{this.getDotSvg()}</i>
+                                                        <span className='case-study-type'>{caseStudy.Type}</span>
+                                                    </div>
                                                 </div>
                                             )
                                         })
