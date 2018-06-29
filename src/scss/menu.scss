@@ -54,3 +54,17 @@
         }
     }
 }
+
+@media(max-width: 500px) {
+    .menu {
+        .menu-item {
+            margin-right: 24px;
+            .menu-link {
+                font-size: 14px;
+            }
+            &:last-child {
+                margin-right: 24px;
+            }
+        }
+    }
+}
