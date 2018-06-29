@@ -1,0 +1,50 @@
+{
+    "cases": [
+        {
+            "Title": "Work",
+            "Content": [
+                {
+                    "Name": "Centeva",
+                    "Type": "UX & UI",
+                    "Image": "/images/case_placeholder.jpg",
+                    "Url": "#"
+                },
+                {
+                    "Name": "MK | World Solutions",
+                    "Type": "UX & UI",
+                    "Image": "/images/case_placeholder.jpg",
+                    "Url": "#"
+                }
+            ]
+        },
+        {
+            "Title": "Case Studies",
+            "Content": [
+                {
+                    "Name": "Responsive Mini Site",
+                    "Type": "UX & UI",
+                    "Image": "/images/case_placeholder.jpg",
+                    "Url": "#"
+                },
+                {
+                    "Name": "United States Holocaust Memorial Museum",
+                    "Type": "UX & UI",
+                    "Image": "/images/case_placeholder.jpg",
+                    "Url": "#"
+                },
+                {
+                    "Name": "Mend",
+                    "Type": "UX & UI",
+                    "Image": "/images/case_placeholder.jpg",
+                    "Url": "#"
+                },
+                {
+                    "Name": "VRBO Redesign",
+                    "Type": "UX & UI",
+                    "Image": "/images/case_placeholder.jpg",
+                    "Url": "#"
+                }
+            ]
+        }
+    ]
+}
