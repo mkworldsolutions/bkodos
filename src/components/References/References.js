@@ -115,7 +115,7 @@ class References extends Component {
         const referenceToLoad = referenceData.slice(startIndex, endIndex);
 
         return (
-            <div className='references-container clear'>
+            <div className='references-container'>
                 <div className={this.getLeftArrowClass()} onClick={this.onPageLeft}>
                     {this.getLeftArrow()}
                 </div>
