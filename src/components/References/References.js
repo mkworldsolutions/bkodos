@@ -3,7 +3,12 @@ import React, { Component } from 'react';
 class References extends Component {
     constructor(props) {
         super(props);
-        const referencePerPage = 2;// FIX ME - find page width to determine how many to show per page
+
+        let referencePerPage = 2;
+        // check window width for reference per page        
+        if (window.innerWidth < 576) {
+            referencePerPage = 1;
+        }
         this.state = {
             referenceLoaded: false,
             referenceData: {},
@@ -30,6 +35,41 @@ class References extends Component {
         }
         xReq.send(null);
 
+        this.resized;
+        this.initResize();
+    }
+
+    initResize = () => {
+        window.addEventListener('resize', () => {
+            this.handleResize();
+        });
+    }
+
+    handleResize = () => {
+        if (!this.resized) {
+            this.resized = setTimeout(() => {
+                this.resized = null;
+                this.onResize();
+            }, 500);
+        };
+    }
+
+    onResize = () => {
+        // resize event to determine how many references to display
+        const { referencePerPage } = this.state;
+        if (window.innerWidth < 576) {
+            if (referencePerPage !== 1) {
+                this.setState({
+                    referencePerPage: 1
+                });
+            }
+        } else {
+            if (referencePerPage !== 2) {
+                this.setState({
+                    referencePerPage: 2
+                });
+            }
+        }
     }
 
     renderReferences = (referenceJson) => {

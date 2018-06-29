@@ -37,3 +37,11 @@
         }
     }
 }
+
+@media(max-width: 400px) {
+    .landing-text-wrapper {
+        .landing-text {
+            font-size: 24px;
+        }
+    }
+}
