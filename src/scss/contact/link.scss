@@ -5,6 +5,11 @@
     z-index: 5;
 }
 
+.contact-links-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .contact-link {
     float: left;
     width: 33.333%;
@@ -44,6 +49,8 @@
 }
 
 .contact-resume-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 57px 0;
     a {
         font-size: 24px;

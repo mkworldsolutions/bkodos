@@ -44,11 +44,14 @@
     font-weight: 300;
     letter-spacing: 0.5px;
     color: #0d0a10;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 // personality
 .about-me-personality-wrapper {
-    margin-top: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
     .about-me-person-item {
         float: left;
         width: 50%;
