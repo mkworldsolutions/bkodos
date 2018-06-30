@@ -4,6 +4,12 @@
             "Title": "Work",
             "Content": [
                 {
+                    "Name": "Float Spa 19",
+                    "Type": "UX & UI",
+                    "Image": "/images/case_placeholder.jpg",
+                    "Url": "#"
+                },
+                {
                     "Name": "Centeva",
                     "Type": "UX & UI",
                     "Image": "/images/case_placeholder.jpg",
