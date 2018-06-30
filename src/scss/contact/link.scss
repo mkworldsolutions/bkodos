@@ -1,0 +1,82 @@
+.contact-link-container {
+    position: relative;
+    padding: 60px 45px;
+    background-color: #FFFFFF;
+    z-index: 5;
+}
+
+.contact-link {
+    float: left;
+    width: 33.333%;
+    height: 240px;
+    .contact-link-padder {
+        height: 100%;
+    }
+    .contact-link-padder:nth-child(1) {
+        padding-right: 12px;
+    }
+    .contact-link-padder:nth-child(2) {
+        padding: 0 12px;
+    }
+    .contact-link-padder:nth-child(3) {
+        padding-left: 12px;
+    }
+    .contact-anchor {
+        text-decoration: none;
+    }
+    .contact-link-item {
+        text-align: center;
+        height: 100%;
+        background-color: #78afd8;
+    }
+    .contact-icon {
+        svg {
+            margin-top: 60px;
+            width: 58px;
+        }
+    }
+    .contact-text {
+        font-size: 28px;
+        font-weight: 700;
+        color: #e8eef2;
+        margin-top: 26px;
+    }
+}
+
+.contact-resume-wrapper {
+    font-size: 24px;
+    letter-spacing: 0;
+    color: #0d0a10;
+    padding: 57px 0;
+    a {
+        text-decoration: none;
+    }
+}
+
+@media(max-width: 960px) {
+    .contact-link {
+        width: 100%;
+        margin-bottom: 24px;
+        .contact-link-padder {
+            width: 50%;
+            padding: 0;
+            margin: 0 auto;
+        }
+    }
+    .contact-resume-wrapper {
+        text-align: center;
+    }
+}
+
+@media(max-width: 650px) {
+    .contact-link {
+        .contact-link-padder {
+            width: 100%;
+            padding: 0;
+            margin: 0 auto;
+        }
+        .contact-text {
+            font-size: 14px;
+        }
+    }
+}

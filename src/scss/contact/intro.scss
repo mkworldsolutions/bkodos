@@ -1,0 +1,21 @@
+.contact-intro-container {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    z-index: 5;
+}
+
+.contact-headline {
+    position: absolute;
+    top: 80%;
+    left: 43px;
+    font-size: 34px;
+    letter-spacing: -0.3px;
+    color: #0d0a10;
+    .contact-text-underline {
+        width: 272px;
+        height: 1px;
+        margin-top: 12px;
+        background-color: #0d0a10;
+    }
+}
