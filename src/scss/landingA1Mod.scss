@@ -23,10 +23,15 @@
     .landing-text {
         font-size: $font-landingA1Mod-size;
         color: $color-landingA1Mod-text;
-        .landing-text-underline {
-            text-decoration: underline;
-        }
     }
+}
+
+.landing-text-underline {
+    position: absolute;
+    bottom: -12px;
+    height: 1px;
+    width: 255px;
+    background-color: $color-landingA1Mod-text;
 }
 
 @media(max-width: 728px) {
@@ -36,6 +41,9 @@
             font-size: 36px;
         }
     }
+    .landing-text-underline {
+        width: 151px;
+    }
 }
 
 @media(max-width: 400px) {
@@ -43,5 +51,8 @@
         .landing-text {
             font-size: 24px;
         }
+    }
+    .landing-text-underline {
+        width: 100px;
     }
 }
