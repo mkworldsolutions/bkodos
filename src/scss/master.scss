@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import 'helpers/variables.scss';
 @import 'typo.scss';
 html,
 body {
@@ -15,12 +15,11 @@ body {
     clear: both;
 }
 
-.footer{
+.footer {
+    position: relative;
     height: 52px;
     background-color: #0d0a10;
+    z-index: 5;
 }
 
 @import 'menu.scss';
-@import 'landingA1Mod.scss';
-@import 'references.scss';
-@import 'caseStudy.scss';
