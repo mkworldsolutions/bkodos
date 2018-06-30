@@ -53,7 +53,7 @@
     .case-study-name {
         float: left;
         width: 45%;
-        text-align: left;
+        text-align: right;
     }
     .case-study-tag-break {
         float: left;
@@ -65,7 +65,7 @@
     .case-study-type {
         float: left;
         width: 45%;
-        text-align: right;
+        text-align: left;
     }
 }
 
@@ -78,6 +78,9 @@
 }
 
 @media(max-width: 722px) {
+    .case-study-container {
+        padding: 24px;
+    }
     .case-study-header {
         text-align: center;
         .case-study-title-underline {
