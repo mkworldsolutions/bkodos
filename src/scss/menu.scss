@@ -51,6 +51,9 @@
             font-size: $font-header-size;
             color: $color-header-menu-text;
             text-decoration: none;
+            &.selected {
+                color: #0d75c1;
+            }
         }
     }
 }

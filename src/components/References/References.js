@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { httpRequest } from '../utils/httpRequest';
 
 class References extends Component {
     constructor(props) {
@@ -19,21 +20,7 @@ class References extends Component {
         }
 
         // get reference json
-        const xReq = new XMLHttpRequest();
-        xReq.open("GET", "/js/references.json", true);
-        xReq.onload = () => {
-            if (xReq.readyState === 4) {
-                if (xReq.status === 200) {
-                    this.renderReferences(xReq.responseText);
-                } else {
-                    console.log('status text: ', xReq.statusText);
-                }
-            }
-        };
-        xReq.onerror = () => {
-            console.log('error loading references: ', xReq.statusText);
-        }
-        xReq.send(null);
+        httpRequest('/js/references.json', this.renderReferences);
 
         this.resized;
         this.initResize();

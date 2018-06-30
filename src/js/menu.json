@@ -1,13 +1,16 @@
 {
     "menu": [
         {
-            "name": "Work"
+            "name": "Work",
+            "url": "/#work"
         },
         {
-            "name": "About"
+            "name": "About",
+            "url": "/about.html"
         },
         {
-            "name": "Contact"
+            "name": "Contact",
+            "url": "/contact.html"
         }
     ]
 }
