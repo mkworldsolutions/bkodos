@@ -95,11 +95,11 @@
         .reference-img-wrapper {
             float: none;
             width: 100%;
-            padding-left: 24px;
+            padding: 0 0 12px 24px;
         }
         .reference-info {
             float: none;
-            width: 100%;
+            max-width: 100%;
             padding: 0 24px;
         }
     }
