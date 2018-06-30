@@ -8,8 +8,9 @@ const LandingA1Mod = () => {
                     Solving Problems
                 </div>
                 <div className='landing-text'>
-                    <span className='landing-text-underline'>Designing</span> Solutions
+                    Designing Solutions
                 </div>
+                <span className='landing-text-underline'></span>
             </div>
         </div>
     )
