@@ -49,6 +49,7 @@
         }
         .menu-link {
             font-size: $font-header-size;
+            font-weight: 300;
             color: $color-header-menu-text;
             text-decoration: none;
             &.selected {
