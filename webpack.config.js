@@ -4,6 +4,9 @@ module.exports = {
     entry: {
         master: [
             "./src/js/master.js"
+        ],
+        landing: [
+            "./src/js/landing.js"
         ]
     },
     output: {
