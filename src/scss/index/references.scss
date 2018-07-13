@@ -1,6 +1,6 @@
 .section-references {
     position: relative;
-    background-color: #55545a;
+    background-color: $color-reference-bg;
     z-index: 5;
 }
 
@@ -65,18 +65,18 @@
     }
     .reference-name {
         font-size: 16px;
-        color: #e3e8ef;
+        color: $color-landingA1Mod-text;
         letter-spacing: 0.2px;
         margin-bottom: 3px;
     }
     .reference-position {
         font-size: 24px;
-        color: #0d75c1;
+        color: $color-header-menu-selected-text;
         margin-bottom: 11px;
     }
     .reference-rec {
         font-size: 12px;
-        color: #e3e8ef;
+        color: $color-landingA1Mod-text;
         letter-spacing: 0.4px;
     }
 }

@@ -1,7 +1,6 @@
-@import '../helpers/variables.scss';
 .section-case-study {
     position: relative;
-    background-color: #FFFFFF;
+    background-color: $color-section-bg;
     z-index: 5;
 }
 
@@ -19,14 +18,14 @@
     .case-study-title {
         font-size: 34px;
         font-weight: 400;
-        color: #0D0A10;
+        color: $color-headline-text;
         letter-spacing: -0.3px;
     }
     .case-study-title-underline {
         margin: 7px 0 8px 0;
         height: 1px;
         width: 272px;
-        background-color: #0D0A10;
+        background-color: $color-header-bg;
     }
 }
 
@@ -40,7 +39,7 @@
 
 .case-study-link {
     display: inline-block;
-    img{
+    img {
         width: 296px;
     }
 }
@@ -50,7 +49,7 @@
     font-size: 12px;
     letter-spacing: 0.4px;
     text-decoration: none;
-    color: #0D0A10;
+    color: $color-headline-text;
     text-align: center;
     margin-top: 16px;
     .case-study-name {
