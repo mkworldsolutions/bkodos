@@ -7,6 +7,9 @@ module.exports = {
         ],
         landing: [
             "./src/js/landing.js"
+        ],
+        work: [
+            "./src/js/work.js"
         ]
     },
     output: {
