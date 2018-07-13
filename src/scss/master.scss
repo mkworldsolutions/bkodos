@@ -1,5 +1,5 @@
-@import 'helpers/variables.scss';
-@import 'typo.scss';
+@import 'helpers/variables';
+@import 'typo';
 html,
 body {
     position: relative;
@@ -22,4 +22,4 @@ body {
     z-index: 5;
 }
 
-@import 'menu.scss';
+@import 'menu';

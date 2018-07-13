@@ -1,9 +1,8 @@
-@import '../helpers/variables.scss';
 .parallax-a1 {
     position: fixed;
     width: 100%;
     height: 80%;
-    background: bottom / cover no-repeat url('/images/landinga1mod.jpg');
+    @include a1Background(bottom, '/images/landinga1mod.jpg');
     z-index: 1;
 }
 

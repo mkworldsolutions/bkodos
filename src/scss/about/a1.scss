@@ -1,7 +1,7 @@
-.about-bg{
+.about-bg {
     position: fixed;
     width: 100%;
-    height: 80%;
-    background: bottom / cover no-repeat url('/images/abouta1.jpg');
+    height: $height-a1;
     z-index: 1;
+    @include a1Background(bottom, '/images/abouta1.jpg');
 }

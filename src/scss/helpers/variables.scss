@@ -1,8 +1,26 @@
-//colors
-$color-header-bg: #0d0a10;
-$color-header-menu-text:#e3e8ef;
-$color-header-menu-selected-text:#0d75c1;
-$color-landingA1Mod-text: #e3e8ef;
+/* colors */
+
+// bg
+$color-header-bg: #0D0A10;
+$color-section-bg: #FFFFFF;
+$color-enfp-bg:#042944;
+$color-contact-bg: #78afd8;
+$color-reference-bg:#55545A;
+// text
+$color-header-menu-text:#E3E8EF;
+$color-header-menu-selected-text:#0D75C1;
+$color-headline-text: #0D0A10;
+$color-landingA1Mod-text: #E3E8EF;
+$color-white-text: #FFFFFF;
+$color-contact-text: #E8EEF2;
 // fonts
 $font-header-size: 24px;
+$font-headline-size: 16px;
 $font-landingA1Mod-size: 60px;
+// mixins
+@mixin a1Background($location, $imgUrl) {
+    background: $location / cover no-repeat url($imgUrl);
+}
+
+// sizes
+$height-a1: 80%;
