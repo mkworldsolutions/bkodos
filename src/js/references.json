@@ -1,49 +1,49 @@
 {
     "peerReferences": [
         {
-            "Image": "/images/nb.jpg",
+            "Image": "/images/reference/nb.jpg",
             "Name": "Nate Barry",
             "Position": "Lead UX Designer",
             "Recommendation": "I hired Beverly as a UX Designer. In her time at Centeva she demonstrated a fantastic grasp of UX concepts. I would have no problem recommending Beverly to another UX position. She is a fast learner, can take complex processes and distill them into usable software, and is great with people. She has a bright career ahead of her in the field of UX. She would be a great addition to any team."
         },
         {
-            "Image": "/images/reference_placeholder.jpg",
+            "Image": "/images/reference/reference_placeholder.jpg",
             "Name": "Shaun Woolf",
             "Position": "UX/UI Designer",
             "Recommendation": "In the short time I worked with Beverly, I was impressed to see the amount of growth in her UX abilities and her valuable contributions to our team. Her willingness to take on new challenges gave her opportunities to not only show off her natural skills, but also allowed her to mature others. She was always grateful when receiving feedback and applied those things she would learn to her work."
         },
         {
-            "Image": "/images/gs.jpg",
+            "Image": "/images/reference/gs.jpg",
             "Name": "Greg Soper",
             "Position": "UX Designer",
             "Recommendation": "Beverly is a compassionate and creative designer. Her raw enthusiasm for beauty, for people, and for problem-solving make her a valuable addition to any UX team."
         },
         {
-            "Image": "/images/av.jpg",
+            "Image": "/images/reference/av.jpg",
             "Name": "Anthony Vea",
             "Position": "UX Designer",
             "Recommendation": "I had the chance to work with Beverly on the Holocaust Museum redesign of their mobile app while at DevMountain. Beverly is a happy person and gets along well in a team environment. She is a creative thinker. When there is a solution we need to come up with, Beverly comes up with 10 different solutions. She stands by what she believes to be right and she knows when to let go of those ideas that do not work. I enjoyed working with her and learned that the only dumb idea is the one that is not brought to the table. She is a great team player and hard worker, always willing to learn and always excited to teach the things she learns."
         },
         {
-            "Image": "/images/bb.jpg",
+            "Image": "/images/reference/bb.jpg",
             "Name": "Brandon Beecroft",
             "Position": "Sr. UX Designer and Lead UX Instructor",
             "Recommendation": "Beverly has a unique ability to look at problems, evaluate them and propose multiple solutions that no one else has thought of. She can think out of the box when looking at a problem. I had the opportunity to teach Bev at DevMountain where she grew and progressed in the UX design curriculum. Bev always came with a smile and was willing to help anyone that needed it. She is a great team player. Bev will be an asset to any team she joins."
         },
         {
-            "Image": "/images/mc.jpg",
+            "Image": "/images/reference/mc.jpg",
             "Name": "Michael Curtis",
             "Position": "UX Designer",
             "Recommendation": "During the time I spent working with Beverly, I was always impressed by her ability to recognize and adhere to the most critical steps in the design process. She takes what she learns and applies it beautifully in user experience design. This resulted in us creating an Android app that met the user's needs both in design and function. She takes her own creativity and builds upon it with the ideas of others. She is reliable, open-minded, easy going, and makes the work environment a fun place to be. I'm excited to see where her future in UX takes her as I'm certain she'll be a valuable asset to any team!"
         },
         {
-            "Image": "/images/sb.jpg",
+            "Image": "/images/reference/sb.jpg",
             "Name": "Stacy Belding",
             "Position": "UX Designer",
             "Recommendation": "Beverly is a strong team player. Her infectious laugh and upbeat optimism make her a great addition to any team environment. She is always ready and willing to take on responsibilities, and you can count on her to deliver."
         },
         {
-            "Image": "/images/rk.jpg",
+            "Image": "/images/reference/rk.jpg",
             "Name": "Retika Kumar",
             "Position": "User Experience Designer",
             "Recommendation": "Amazing work ethic. Wonderful co-worker on USHMM project. Tremendously hard working and does it with a smile."
