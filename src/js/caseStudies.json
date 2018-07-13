@@ -4,21 +4,15 @@
             "Title": "Work",
             "Content": [
                 {
-                    "Name": "Float Spa 19",
-                    "Type": "UX & UI",
-                    "Image": "/images/case_placeholder.jpg",
-                    "Url": "#"
-                },
-                {
                     "Name": "Centeva",
                     "Type": "UX & UI",
-                    "Image": "/images/case_placeholder.jpg",
+                    "Image": "/images/case/work_centeva.png",
                     "Url": "#"
                 },
                 {
                     "Name": "MK | World Solutions",
                     "Type": "UX & UI",
-                    "Image": "/images/case_placeholder.jpg",
+                    "Image": "/images/case/work_mk.png",
                     "Url": "#"
                 }
             ]
@@ -29,25 +23,25 @@
                 {
                     "Name": "Responsive Mini Site",
                     "Type": "UX & UI",
-                    "Image": "/images/case_placeholder.jpg",
+                    "Image": "/images/case/case_rmstitle.png",
                     "Url": "#"
                 },
                 {
                     "Name": "United States Holocaust Memorial Museum",
                     "Type": "UX & UI",
-                    "Image": "/images/case_placeholder.jpg",
+                    "Image": "/images/case/case_holocaust.png",
                     "Url": "#"
                 },
                 {
                     "Name": "Mend",
                     "Type": "UX & UI",
-                    "Image": "/images/case_placeholder.jpg",
+                    "Image": "/images/case/case_mend.png",
                     "Url": "#"
                 },
                 {
                     "Name": "VRBO Redesign",
                     "Type": "UX & UI",
-                    "Image": "/images/case_placeholder.jpg",
+                    "Image": "/images/case/case_vrbo.png",
                     "Url": "#"
                 }
             ]
