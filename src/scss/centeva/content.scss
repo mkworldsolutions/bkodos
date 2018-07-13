@@ -1,0 +1,99 @@
+section {
+    position: relative;
+    padding: 16px 44px;
+    background-color: #FFFFFF;
+    z-index: 10;
+    &:nth-of-type(2n) {
+        background-color: #0d0a10;
+        .work-component-item {
+            .item-title {
+                color: #e3e8ef;
+            }
+            .item-tagline {
+                color: #e3e8ef;
+            }
+            .item-desc {
+                color: #e3e8ef;
+            }
+        }
+    }
+}
+
+.work-ox-headline {
+    font-size: 34px;
+    letter-spacing: -0.3px;
+    color: #0D0A10;
+}
+
+.work-headline {
+    font-size: 24px;
+    letter-spacing: 0;
+    color: #0D0A10;
+}
+
+.work-ox-headline-underline {
+    height: 1px;
+    width: 272px;
+    margin: 16px 0;
+    background-color: #0D0A10;
+}
+
+.work-ox-sports {
+    margin-bottom: 16px;
+}
+
+.work-info {
+    .work-role {
+        font-size: 18px;
+        color: #0D0A10;
+        margin-bottom: 8px;
+    }
+    .work-details {
+        font-size: 14px;
+        font-weight: 300;
+        color: #0D0A10;
+    }
+}
+
+// work component
+.work-component-wrapper {
+    display: table;
+    width: 100%;
+    .work-component-item {
+        display: table-cell;
+        width: 50%;
+        vertical-align: middle;
+    }
+}
+
+.work-component-item {
+    .item-title {
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        color: $color-text;
+        margin-bottom: 8px;
+    }
+    .item-tagline {
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        color: $color-text;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+    .item-desc {
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        color: $color-text;
+    }
+    .work-read-more {
+        margin-top: 40px;
+        .read-more-link {
+            height: 40px;
+            padding: 10px 30px;
+            font-size: 14px;
+            color: #CCD4DD;
+            text-decoration: none;
+            background-color: #42576D;
+        }
+    }
+}

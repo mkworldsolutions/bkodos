@@ -1,0 +1,25 @@
+#goback-header {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    padding: 33px;
+    z-index: 5;
+}
+
+.btn-goback {
+    cursor: pointer;
+    font-size: 24px;
+    color: $color-text;
+    letter-spacing: 0;
+    height: 33px;
+    line-height: 33px;
+    border: none;
+    background: transparent;
+    &:hover {
+        text-decoration: underline;
+    }
+    svg {
+        width: 16px;
+        margin-right: 10px;
+    }
+}
