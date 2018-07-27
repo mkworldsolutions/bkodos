@@ -4,10 +4,13 @@ import { httpRequest } from '../utils/httpRequest';
 class References extends Component {
     constructor(props) {
         super(props);
+        const {
+            widthToOneRef
+        } = props;
 
         let referencePerPage = 2;
         // check window width for reference per page        
-        if (window.innerWidth < 576) {
+        if (window.innerWidth < widthToOneRef) {
             referencePerPage = 1;
         }
         this.state = {
@@ -44,7 +47,7 @@ class References extends Component {
     onResize = () => {
         // resize event to determine how many references to display
         const { referencePerPage } = this.state;
-        if (window.innerWidth < 576) {
+        if (window.innerWidth < this.props.widthToOneRef) {
             if (referencePerPage !== 1) {
                 this.setState({
                     referencePerPage: 1

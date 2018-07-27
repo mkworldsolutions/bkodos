@@ -74,7 +74,7 @@
     }
 }
 
-@media(max-width: 650px) {
+@media(max-width: $screen-md) {
     .contact-link {
         .contact-link-padder {
             width: 100%;

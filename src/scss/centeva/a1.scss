@@ -1,15 +1,13 @@
 .centeva-parallax-a1 {
-    position: fixed;
-    width: 100%;
-    height: 80%;
-    @include a1Background(center 30%, '/images/centeva/centeva_a1.png');
-    z-index: 1;
-}
-
-.parallax-dummy {
     position: relative;
     width: 100%;
     height: 80%;
-    background: transparent;
-    z-index: 2;
+    @include a1Background(center 30%, '/images/centeva/centeva_a1.png');
+    z-index: 5;
+}
+
+@media(max-width: $screen-md) {
+    .centeva-parallax-a1 {
+        height: 50%;
+    }
 }

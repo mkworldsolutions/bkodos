@@ -1,0 +1,7 @@
+.mk-parallax-a1 {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    @include a1Background(center, '/images/mk/mk_a1.png');
+    z-index: 5;
+}
