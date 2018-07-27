@@ -33,7 +33,7 @@
     background-color: $color-landingA1Mod-text;
 }
 
-@media(max-width: 728px) {
+@media(max-width: $screen-md) {
     .landing-text-wrapper {
         left: 63px;
         .landing-text {
@@ -45,7 +45,7 @@
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: $screen-sm) {
     .landing-text-wrapper {
         .landing-text {
             font-size: 24px;

@@ -71,7 +71,7 @@
     }
 }
 
-@media(max-width: 1024px) {
+@media(max-width: $screen-lg) {
     .case-study-item-wrapper {
         .case-study-item {
             width: 50%;
@@ -79,7 +79,7 @@
     }
 }
 
-@media(max-width: 722px) {
+@media(max-width: $screen-md) {
     .case-study-container {
         padding: 24px;
     }
@@ -93,9 +93,16 @@
         .case-study-item {
             text-align: center;
             width: 100%;
+            margin: 14px 0;
         }
     }
     .case-study-tagline {
         margin: 16px auto 0 auto;
+    }
+}
+
+@media(max-width: $screen-sm) {
+    .case-study-link img {
+        width: 100%;
     }
 }
