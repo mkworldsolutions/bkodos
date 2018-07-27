@@ -17,7 +17,7 @@ import CaseStudies from '../build/CaseStudies/CaseStudies';
     const references = document.getElementById('references');
     if (references !== null) {
         render(
-            <References />,
+            <References widthToOneRef='1100' />,
             references
         )
     }
