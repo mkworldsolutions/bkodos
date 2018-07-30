@@ -15,11 +15,23 @@ body {
     clear: both;
 }
 
-.footer {
-    position: relative;
-    height: 52px;
-    background-color: #0d0a10;
-    z-index: 5;
+.padding-left {
+    &.sm {
+        padding-left: 8px;
+    }
+    &.md {
+        padding-left: 16px;
+    }
 }
 
+.padding-right {
+    &.sm {
+        padding-right: 8px;
+    }
+    &.md {
+        padding-right: 16px;
+    }
+}
+
+@import 'footer';
 @import 'menu';
