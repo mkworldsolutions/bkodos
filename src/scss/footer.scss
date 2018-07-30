@@ -1,0 +1,31 @@
+$footer-height: 52px;
+.footer {
+    position: relative;
+    height: $footer-height;
+    background-color: #0d0a10;
+    z-index: 5;
+}
+
+.footer-nav-container {
+    height: $footer-height;
+    line-height: $footer-height;
+}
+
+.footer-back-wrapper,
+.footer-next-wrapper {
+    float: left;
+    width: 50%;
+    svg {
+        width: 10px;
+        transform: translateY(2px);
+        margin: 0 5px;
+    }
+    a{
+        color: #E3E8EF;
+        text-decoration: none;
+    }
+}
+
+.footer-next-wrapper {
+    text-align: right;
+}
