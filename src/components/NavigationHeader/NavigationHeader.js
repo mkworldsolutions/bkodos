@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GoBackHeader = () => {
+const NavigationHeader = () => {
 
     const getArrowSvg = () => {
         return (
@@ -10,8 +10,8 @@ const GoBackHeader = () => {
 
     const handleGoBack = () => {
         const referrer = document.referrer;
-        if ((referrer !== "") && (referrer.toLowerCase().indexOf('beverlykodos') === 0)) {
-            window.location = document.referrer;
+        if ((referrer !== "") && (referrer.toLowerCase().indexOf('beverlykodos') > 0)) {
+            history.back();
         } else {
             window.location = window.location.origin;
         }
@@ -26,4 +26,4 @@ const GoBackHeader = () => {
     );
 }
 
-export default GoBackHeader;
+export default NavigationHeader;
