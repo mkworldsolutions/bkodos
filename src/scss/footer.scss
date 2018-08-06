@@ -20,7 +20,7 @@ $footer-height: 52px;
         transform: translateY(2px);
         margin: 0 5px;
     }
-    a{
+    a {
         color: #E3E8EF;
         text-decoration: none;
     }
@@ -28,4 +28,13 @@ $footer-height: 52px;
 
 .footer-next-wrapper {
     text-align: right;
+}
+
+@media(max-width: $screen-md) {
+    .footer-back-wrapper,
+    .footer-next-wrapper {
+        a {
+            font-size: 12px;
+        }
+    }
 }
