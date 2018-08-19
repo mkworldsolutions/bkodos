@@ -6,13 +6,40 @@
     z-index: 5;
 }
 
-.calendar-a1{
+.calendar-a1 {
     position: relative;
     width: 100%;
     height: 60%;
-    background-color: #EEEEEE;
+    @include a1BackgroundContains(center, '/images/centeva/calendar_sm.png');
     z-index: 5;
 }
+
+.schedule-a1 {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    @include a1BackgroundContains(center, '/images/centeva/schedule_sm.png');
+    background-color: #0b080f;
+    z-index: 5;
+}
+
+.playbooks-a1 {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    @include a1BackgroundContains(center, '/images/centeva/playbooks_sm.png');
+    z-index: 5;
+}
+
+.notebooks-a1 {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    @include a1BackgroundContains(center, '/images/centeva/notebooks_sm.png');
+    background-color: #0b080f;
+    z-index: 5;
+}
+
 @media(max-width: $screen-md) {
     .centeva-parallax-a1 {
         height: 50%;
