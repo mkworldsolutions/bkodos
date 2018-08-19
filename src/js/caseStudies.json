@@ -6,13 +6,13 @@
                 {
                     "Name": "Centeva",
                     "Type": "UX & UI",
-                    "Image": "/images/case/work_centeva.png",
+                    "Image": "/images/cases/work_centeva.png",
                     "Url": "/work/centeva"
                 },
                 {
                     "Name": "MK | World Solutions",
                     "Type": "UX & UI",
-                    "Image": "/images/case/work_mk.png",
+                    "Image": "/images/cases/work_mk.png",
                     "Url": "/work/mkworldsolutions"
                 }
             ]
@@ -23,25 +23,25 @@
                 {
                     "Name": "Responsive Mini Site",
                     "Type": "UX & UI",
-                    "Image": "/images/case/case_rmstitle.png",
-                    "Url": "#"
+                    "Image": "/images/cases/case_rmstitle.png",
+                    "Url": "/cases/responsivemini.html"
                 },
                 {
                     "Name": "United States Holocaust Memorial Museum",
                     "Type": "UX & UI",
-                    "Image": "/images/case/case_holocaust.png",
+                    "Image": "/images/cases/case_holocaust.png",
                     "Url": "#"
                 },
                 {
                     "Name": "Mend",
                     "Type": "UX & UI",
-                    "Image": "/images/case/case_mend.png",
+                    "Image": "/images/cases/case_mend.png",
                     "Url": "#"
                 },
                 {
                     "Name": "VRBO Redesign",
                     "Type": "UX & UI",
-                    "Image": "/images/case/case_vrbo.png",
+                    "Image": "/images/cases/case_vrbo.png",
                     "Url": "#"
                 }
             ]
