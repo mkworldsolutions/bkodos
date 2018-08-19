@@ -5,3 +5,11 @@
     @include a1Background(center, '/images/mk/mk_a1.png');
     z-index: 5;
 }
+
+.floatspa19-a1 {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    @include a1BackgroundContains(center, '/images/mk/floatspa19/a1.png');
+    z-index: 5;
+}
