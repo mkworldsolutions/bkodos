@@ -19,8 +19,12 @@ $font-header-size: 24px;
 $font-headline-size: 16px;
 $font-landingA1Mod-size: 60px;
 // mixins
-@mixin a1Background($location, $imgUrl) {
-    background: $location / cover no-repeat url($imgUrl);
+@mixin a1Background($placement, $imgUrl) {
+    background: $placement / cover no-repeat url($imgUrl);
+}
+
+@mixin a1BackgroundContains($placement, $imgUrl) {
+    background: $placement / contain no-repeat url($imgUrl);
 }
 
 // sizes
