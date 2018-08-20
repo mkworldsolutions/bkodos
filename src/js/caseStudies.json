@@ -30,19 +30,19 @@
                     "Name": "United States Holocaust Memorial Museum",
                     "Type": "UX & UI",
                     "Image": "/images/cases/case_holocaust.png",
-                    "Url": "#"
+                    "Url": "/cases/ushmm.html"
                 },
                 {
                     "Name": "Mend",
                     "Type": "UX & UI",
                     "Image": "/images/cases/case_mend.png",
-                    "Url": "#"
+                    "Url": "/cases/mend.html"
                 },
                 {
                     "Name": "VRBO Redesign",
                     "Type": "UX & UI",
                     "Image": "/images/cases/case_vrbo.png",
-                    "Url": "#"
+                    "Url": "/cases/vrbo.html"
                 }
             ]
         }
