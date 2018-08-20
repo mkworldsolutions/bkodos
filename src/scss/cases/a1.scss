@@ -21,3 +21,11 @@
     @include a1BackgroundContains(center, '/images/cases/mend/a1.png');
     z-index: 5;
 }
+
+.vrbo-a1 {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    @include a1BackgroundContains(center, '/images/cases/vrbo/a1.png');
+    z-index: 5;
+}
