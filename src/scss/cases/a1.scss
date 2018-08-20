@@ -13,3 +13,11 @@
     @include a1BackgroundContains(center, '/images/cases/ushmm/a1.png');
     z-index: 5;
 }
+
+.mend-a1 {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    @include a1BackgroundContains(center, '/images/cases/mend/a1.png');
+    z-index: 5;
+}
