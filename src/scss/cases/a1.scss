@@ -5,3 +5,11 @@
     @include a1BackgroundContains(center, '/images/cases/rms/a1.png');
     z-index: 5;
 }
+
+.ushmm-a1 {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    @include a1BackgroundContains(center, '/images/cases/ushmm/a1.png');
+    z-index: 5;
+}
