@@ -22,11 +22,13 @@ class References extends Component {
             totalPages: 0
         }
 
-        // get reference json
-        httpRequest('/js/references.json', this.renderReferences);
-
         this.resized;
         this.initResize();
+    }
+
+    componentDidMount() {
+        // get reference json
+        httpRequest('/js/references.json', this.renderReferences);
     }
 
     initResize = () => {

@@ -11,6 +11,9 @@ class CaseStudies extends Component {
             caseLoaded: false,
             caseStudyData: []
         };
+    }
+
+    componentDidMount() {
         // get case json
         httpRequest('/js/caseStudies.json', this.renderCaseStudies);
     }

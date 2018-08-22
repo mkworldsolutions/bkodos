@@ -11,7 +11,9 @@ class Menu extends Component {
             menuLoaded: false,
             menuData: {}
         };
+    }
 
+    componentDidMount() {
         // get menu json
         httpRequest("/js/menu.json", this.renderMenu);
     }
