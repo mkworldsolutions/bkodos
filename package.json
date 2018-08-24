@@ -1,6 +1,6 @@
 {
     "name": "bkodos",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "beverlykodos",
     "main": "index.js",
     "scripts": {

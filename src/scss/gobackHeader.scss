@@ -7,6 +7,12 @@
 
 .goback-container {
     padding: 33px;
+    &.light .btn-goback {
+        color: $color-white-text;
+        svg path {
+            fill: $color-white-text;
+        }
+    }
 }
 
 .btn-goback {
