@@ -2,8 +2,13 @@
     position: relative;
     width: 100%;
     height: 80%;
-    @include a1Background(center 30%, '/images/centeva/centeva_a1.png');
+    //@include a1Background(center 30%, '/images/centeva/centeva_a1.png');
     z-index: 5;
+    .ox-vid {
+        width: 100%;
+        height: calc(100% - 60px);
+        margin-top: 60px;
+    }
 }
 
 .calendar-a1 {
