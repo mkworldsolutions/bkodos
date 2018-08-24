@@ -1,6 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
-import GoBackHeader from '../build/GoBackHeader/GoBackHeader';
 import NavigationHeader from '../build/NavigationHeader/NavigationHeader';
 import NavigationFooter from '../build/NavigationFooter/NavigationFooter';
 
