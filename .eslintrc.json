@@ -1,0 +1,16 @@
+{
+    "extends": "eslint-config-airbnb",
+    "env": {
+        "browser": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+        "indent": ["error",4], // for indent types
+        "linebreak-style": ["error","windows"], // something with LF and CRLF formating
+        "react/jsx-filename-extension": [1,{"extensions": [".js",".jsx"]}], // allow jsx in files with .js
+        "react/jsx-indent": [true,12] // more indent stuff?
+    },
+    "settings": {
+        "import/parser": "babel-eslint"
+    }
+}
