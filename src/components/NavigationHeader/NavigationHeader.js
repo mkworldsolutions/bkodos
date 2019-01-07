@@ -31,7 +31,7 @@ const NavigationHeader = () => {
 
     return (
         <div className={`goback-container${isLightHeader() ? ' light' : ''}`}>
-            <button type="button" className="btn-goback" onClick={handleGoBack}>
+            <button type='button' className='btn-goback' onClick={handleGoBack}>
                 {getArrowSvg()}
                 Go Back
             </button>

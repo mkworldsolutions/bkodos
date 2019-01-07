@@ -68,9 +68,9 @@ class References extends Component {
         const references = JSON.parse(referenceJson);
 
         this.setState({
-            referenceLoaded: true,// pass loaded test
+            referenceLoaded: true, // pass loaded test
             referenceData: references.peerReferences, // reference data
-            referencesCount: references.peerReferences.length,// count of references
+            referencesCount: references.peerReferences.length, // count of references
             totalPages: Math.ceil((references.peerReferences.length / this.state.referencePerPage))// pages to page through
         });
     }
