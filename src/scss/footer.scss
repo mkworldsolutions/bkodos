@@ -1,14 +1,17 @@
 $footer-height: 52px;
 .footer {
-    position: relative;
-    height: $footer-height;
     background-color: #0d0a10;
-    z-index: 5;
+    bottom: 0;
+    height: $footer-height;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 .footer-nav-container {
     height: $footer-height;
     line-height: $footer-height;
+    position: relative;
 }
 
 .footer-back-wrapper,
@@ -28,6 +31,25 @@ $footer-height: 52px;
 
 .footer-next-wrapper {
     text-align: right;
+}
+
+.footer-up-wrapper {
+    cursor: pointer;
+    left: 50%;
+    position: absolute;
+    transition: .2s;
+    width: 20px;
+    &:hover {
+        transform: scale(1.1);
+        .footer-up-link svg path {
+            fill: #DADADA;
+        }
+    }
+    .footer-up-link svg {
+        margin-top: 10px;
+        transform: rotate(90deg);
+        width: 20px;
+    }
 }
 
 @media(max-width: $screen-md) {
