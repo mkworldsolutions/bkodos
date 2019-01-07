@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Menu from '../build/Menu/Menu';
+import { Menu } from '../components';
 
 (() => {
     // render menu
@@ -9,6 +9,6 @@ import Menu from '../build/Menu/Menu';
         render(
             <Menu />,
             menu
-        )
+        );
     }
 })();

@@ -1,8 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import LandingA1Mod from '../build/LandingA1Mod/LandingA1Mod';
-import References from '../build/References/References';
-import CaseStudies from '../build/CaseStudies/CaseStudies';
+import { CaseStudies, LandingA1Mod, References } from '../components';
 
 (() => {
     // render A1 mod
@@ -11,7 +9,7 @@ import CaseStudies from '../build/CaseStudies/CaseStudies';
         render(
             <LandingA1Mod />,
             landingA1Mod
-        )
+        );
     }
     // render references
     const references = document.getElementById('references');
@@ -19,7 +17,7 @@ import CaseStudies from '../build/CaseStudies/CaseStudies';
         render(
             <References widthToOneRef='1100' />,
             references
-        )
+        );
     }
     // render case studies
     const caseStudy = document.getElementById('case-study');
@@ -27,6 +25,6 @@ import CaseStudies from '../build/CaseStudies/CaseStudies';
         render(
             <CaseStudies />,
             caseStudy
-        )
+        );
     }
 })();

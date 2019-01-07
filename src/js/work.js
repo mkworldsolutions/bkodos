@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import NavigationHeader from '../build/NavigationHeader/NavigationHeader';
-import NavigationFooter from '../build/NavigationFooter/NavigationFooter';
+import { NavigationFooter, NavigationHeader } from '../components';
 
 (() => {
     // render go back header
