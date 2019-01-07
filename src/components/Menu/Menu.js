@@ -15,7 +15,7 @@ class Menu extends Component {
 
     componentDidMount() {
         // get menu json
-        httpRequest("/js/menu.json", this.renderMenu);
+        httpRequest('/js/menu.json', this.renderMenu);
     }
 
     renderMenu = (menuJson) => {
@@ -47,16 +47,14 @@ class Menu extends Component {
                 <div className='menu-wrapper'>
                     <ul className='menu clear'>
                         {
-                            menuData.menu.map((menuItem, key) => {
-                                return (
-                                    <MenuItem key={key} menuItem={menuItem} pathName={pathName} />
-                                )
-                            })
+                            menuData.menu.map((menuItem, key) => (
+                                <MenuItem key={key} menuItem={menuItem} pathName={pathName} />
+                            ))
                         }
                     </ul>
                 </div>
             </div>
-        )
+        );
     }
 }
 

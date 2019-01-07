@@ -44,23 +44,21 @@ class CaseStudies extends Component {
                             <div className='case-study-wrapper' key={key}>
                                 <div className='case-study-header'>
                                     <div className='case-study-title'>{parentCase.Title}</div>
-                                    <div className='case-study-title-underline' ></div>
+                                    <div className='case-study-title-underline' />
                                 </div>
                                 <div className='case-study-item-wrapper clear'>
                                     {
-                                        parentCase.Content.map((caseStudy, key) => {
-                                            return (
-                                                <CaseStudyItem caseStudy={caseStudy} key={key} />
-                                            );
-                                        })
+                                        parentCase.Content.map((caseStudy, key) => (
+                                            <CaseStudyItem caseStudy={caseStudy} key={key} />
+                                        ))
                                     }
                                 </div>
                             </div>
-                        )
+                        );
                     })
                 }
             </div>
-        )
+        );
     }
 }
 

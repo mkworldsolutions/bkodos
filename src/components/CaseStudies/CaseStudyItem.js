@@ -1,14 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const CaseStudyItem = ({
     caseStudy
 }) => {
-
-    const getDotSvg = () => {
-        return (
-            <svg viewBox="0 0 512 512"><path fill='#0d75c1' d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z" /></svg>
-        );
-    }
+    const getDotSvg = () => (
+        <svg viewBox="0 0 512 512"><path fill='#0d75c1' d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z" /></svg>
+    );
 
     return (
         <div className='case-study-item'>
@@ -24,6 +22,10 @@ const CaseStudyItem = ({
             </div>
         </div>
     );
-}
+};
+
+CaseStudyItem.propTypes = {
+    caseStudy: PropTypes.shape({}).isRequired
+};
 
 export default CaseStudyItem;
