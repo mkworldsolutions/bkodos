@@ -46,12 +46,13 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|jpg|gif|ttf)$/i,
-                use: [
-                    {
-                        loader: 'url-loader'
-                    }
-                ]
+                test: /\.(woff2?|ttf|otf|eot|svg)$/,
+                exclude: /node_modules/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: '/fonts'
+                }
             }
         ]
     },
@@ -69,7 +70,6 @@ module.exports = {
             { from: 'src/work/*.html', to: path.join(__dirname, 'dist/work'), flatten: true },
             { from: 'src/work/centeva/*.html', to: path.join(__dirname, 'dist/work/centeva'), flatten: true },
             { from: 'src/work/mkworldsolutions/*.html', to: path.join(__dirname, 'dist/work/mkworldsolutions'), flatten: true },
-            { from: 'src/scss/fonts', to: path.join(__dirname, 'dist/css/fonts'), flatten: true },
             { from: 'src/images', to: path.join(__dirname, 'dist/images') },
             { from: 'src/js/*.json', to: path.join(__dirname, 'dist/js'), flatten: true }
         ])
