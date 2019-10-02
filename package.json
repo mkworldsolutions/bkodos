@@ -1,57 +1,65 @@
 {
-    "name": "bkodos",
-    "version": "1.1.0",
-    "description": "beverlykodos",
-    "main": "index.js",
-    "scripts": {
-        "build": "yarn clean && cross-env NODE_ENV=production webpack --config webpack.prod.js",
-        "build:dev": "yarn clean && cross-env NODE_ENV=development webpack --config webpack.dev.js && webpack-dev-server --config webpack.dev.js",
-        "clean": "node cleandist.js",
-        "fresh": "node cleanall.js",
-        "lint": "eslint src",
-        "test": "yarn clean && cross-env NODE_ENV=development webpack --config webpack.test.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/mariolo1985/bkodos.git"
-    },
-    "keywords": [
-        "reactjs"
-    ],
-    "author": "M Lo",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/mariolo1985/bkodos/issues"
-    },
-    "homepage": "https://github.com/mariolo1985/bkodos#readme",
-    "dependencies": {
-        "prop-types": "^15.6.2",
-        "react": "^16.7.0",
-        "react-dom": "^16.7.0"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.1.0",
-        "@babel/plugin-proposal-class-properties": "^7.1.0",
-        "@babel/plugin-proposal-export-default-from": "^7.0.0",
-        "@babel/preset-env": "^7.1.0",
-        "@babel/preset-react": "^7.0.0",
-        "babel-eslint": "^9.0.0",
-        "babel-loader": "^8.0.4",
-        "copy-webpack-plugin": "^4.6.0",
-        "cross-env": "^5.2.0",
-        "css-loader": "^1.0.1",
-        "eslint": "^5.6.0",
-        "eslint-config-airbnb": "^17.1.0",
-        "eslint-plugin-import": "^2.14.0",
-        "eslint-plugin-jsx-a11y": "^6.1.1",
-        "eslint-plugin-react": "^7.11.1",
-        "file-loader": "^3.0.1",
-        "fs-extra": "^7.0.0",
-        "mini-css-extract-plugin": "^0.4.4",
-        "node-sass": "^4.10.0",
-        "sass-loader": "^7.1.0",        
-        "webpack": "^4.23.1",
-        "webpack-cli": "^3.1.2",
-        "webpack-dev-server": "^3.1.10"
-    }
+  "name": "bkodos",
+  "version": "1.1.0",
+  "description": "beverlykodos",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn clean && cross-env NODE_ENV=production webpack --config webpack.prod.js",
+    "build:dev": "yarn clean && cross-env NODE_ENV=development webpack --config webpack.dev.js && webpack-dev-server --config webpack.dev.js",
+    "clean": "node cleandist.js",
+    "fresh": "node cleanall.js",
+    "lint": "eslint src",
+    "test": "yarn clean && cross-env NODE_ENV=development webpack --config webpack.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariolo1985/bkodos.git"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "M Lo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariolo1985/bkodos/issues"
+  },
+  "homepage": "https://github.com/mariolo1985/bkodos#readme",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.6.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^5.0.4",
+    "cross-env": "^6.0.0",
+    "css-loader": "^3.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "file-loader": "^4.2.0",
+    "fs-extra": "^8.1.0",
+    "jest": "^24.9.0",
+    "less": "^3.10.3",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  }
 }

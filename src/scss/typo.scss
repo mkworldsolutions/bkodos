@@ -1,14 +1,25 @@
 @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: "Roboto";
-    font-weight: 300;
-    src: url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Brotherhood";
+  src: url("../fonts/Brotherhood_Script.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Hellogoodbye";
+  src: url("../fonts/hellogoodbye.otf") format("truetype");
 }
 
 body {
-    font-family: "Roboto";
+  color: #312006;
+  font-family: "Hellogoodbye", "Brotherhood";
 }

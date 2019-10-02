@@ -3,6 +3,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+/*
 const entries = {
     index: path.join(__dirname, 'src/js/index.js'),
     landing: path.join(__dirname, 'src/js/landing.js'),
@@ -15,63 +16,68 @@ const entries = {
     mkworld: path.join(__dirname, 'src/scss/mkworld.scss'),
     cases: path.join(__dirname, 'src/scss/cases.scss')
 };
+*/
+
+const entries = {
+  master: path.join(__dirname, 'src/scss/master.scss')
+};
 
 module.exports = {
-    name: 'Bundling dev',
-    mode: 'production',
-    entry: entries,
-    output: {
-        path: path.join(__dirname, 'dist'),
-        filename: 'js/[name].min.js'
-    },
-    devServer: {
-        contentBase: './dist',
-        hot: true,
-        open: true
-    },
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                use: {
-                    loader: 'babel-loader'
-                }
-            },
-            {
-                test: /\.scss$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'sass-loader'
-                ]
-            },
-            {
-                test: /\.(woff2?|ttf|otf|eot|svg)$/,
-                exclude: /node_modules/,
-                loader: 'file-loader',
-                options: {
-                    name: '[name].[ext]',
-                    outputPath: '/fonts'
-                }
-            }
+  name: 'Bundling dev',
+  mode: 'production',
+  entry: entries,
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: 'js/[name].min.js'
+  },
+  devServer: {
+    contentBase: './dist',
+    hot: true,
+    open: true
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader'
+        }
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader'
         ]
-    },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.LoaderOptionsPlugin({
-            minimize: true
-        }),
-        new MiniCssExtractPlugin({
-            filename: 'css/[name].min.css'
-        }),
-        new CopyWebpackPlugin([
-            { from: 'src/*.html', to: path.join(__dirname, 'dist'), flatten: true },
-            { from: 'src/cases/*.html', to: path.join(__dirname, 'dist/cases'), flatten: true },
-            { from: 'src/work/*.html', to: path.join(__dirname, 'dist/work'), flatten: true },
-            { from: 'src/work/centeva/*.html', to: path.join(__dirname, 'dist/work/centeva'), flatten: true },
-            { from: 'src/work/mkworldsolutions/*.html', to: path.join(__dirname, 'dist/work/mkworldsolutions'), flatten: true },
-            { from: 'src/images', to: path.join(__dirname, 'dist/images') },
-            { from: 'src/js/*.json', to: path.join(__dirname, 'dist/js'), flatten: true }
-        ])
+      },
+      {
+        test: /\.(woff2?|ttf|otf|eot|svg)$/,
+        exclude: /node_modules/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: '/fonts'
+        }
+      }
     ]
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'css/[name].min.css'
+    }),
+    new CopyWebpackPlugin([
+      { from: 'src/*.html', to: path.join(__dirname, 'dist'), flatten: true },
+      { from: 'src/cases/*.html', to: path.join(__dirname, 'dist/cases'), flatten: true },
+      { from: 'src/work/*.html', to: path.join(__dirname, 'dist/work'), flatten: true },
+      { from: 'src/work/centeva/*.html', to: path.join(__dirname, 'dist/work/centeva'), flatten: true },
+      { from: 'src/work/mkworldsolutions/*.html', to: path.join(__dirname, 'dist/work/mkworldsolutions'), flatten: true },
+      { from: 'src/images', to: path.join(__dirname, 'dist/images') },
+      { from: 'src/js/*.json', to: path.join(__dirname, 'dist/js'), flatten: true }
+    ])
+  ]
 };

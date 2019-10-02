@@ -1,41 +1,198 @@
 @import 'helpers/variables';
 @import 'typo';
+
 html,
 body {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(#F6AF42, #F7CF82, #F6DDAD);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .clear:before,
 .clear:after {
-    display: table;
-    content: '';
-    clear: both;
+  display: table;
+  content: '';
+  clear: both;
 }
 
 .padding-left {
-    &.sm {
-        padding-left: 8px;
-    }
-    &.md {
-        padding-left: 16px;
-    }
+  &.sm {
+    padding-left: 8px;
+  }
+
+  &.md {
+    padding-left: 16px;
+  }
 }
 
 .padding-right {
-    &.sm {
-        padding-right: 8px;
-    }
-    &.md {
-        padding-right: 16px;
-    }
+  &.sm {
+    padding-right: 8px;
+  }
+
+  &.md {
+    padding-right: 16px;
+  }
 }
 
 .section-work-wrapper {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-@import 'footer';
-@import 'menu';
+// Under Contruction styles
+.content-under-construction {
+  background-color: #f1ede7;
+  margin: 0 auto;
+  padding-bottom: 42px;
+  text-align: center;
+  width: 411px;
+}
+
+.uc-header {
+  font-family: "Brotherhood";
+  font-size: 60px;
+  padding-top: 42px;
+}
+
+.uc-info {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.uc-instruction {
+  font-size: 60px;
+  margin-top: 24px;
+}
+
+.uc-action-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 72px;
+  padding: 0 41px;
+}
+
+$img-spacing: -90px;
+$img-spacing-md: -60px;
+$img-spacing-sm: -50px;
+
+.uc-action {
+  position: relative;
+  flex: 1;
+
+  .uc-action-img-wrapper {
+    position: absolute;
+
+    &.left {
+      left: $img-spacing;
+    }
+
+    &.right {
+      right: $img-spacing;
+    }
+  }
+
+  .uc-action-img {
+    width: 80px;
+  }
+
+  .uc-action-tagline {
+    font-size: 25px;
+    margin-bottom: 16px;
+  }
+
+  .uc-action-link {
+    background-color: #f6af42;
+    color: #312006;
+    font-family: "Roboto";
+    font-size: 14px;
+    padding: 9px 34px;
+    text-decoration: none;
+  }
+}
+
+@media(max-width: $screen-md) {
+  .uc-header {
+    font-size: 40px;
+    padding-top: 32px;
+  }
+
+  .uc-info {
+    font-size: 25px;
+  }
+
+  .uc-instruction {
+    font-size: 40px;
+    margin-top: 32px;
+  }
+
+  .uc-action-wrapper {
+    margin-top: 48px;
+  }
+
+  .uc-action {
+    .uc-action-tagline {
+      font-size: 20px;
+    }
+
+    .uc-action-img {
+      width: 40px;
+    }
+
+    .uc-action-img-wrapper {
+
+      &.left {
+        left: $img-spacing-md;
+      }
+
+      &.right {
+        right: $img-spacing-md;
+      }
+    }
+  }
+}
+
+@media(max-width: $screen-sm) {
+  .content-under-construction {
+    width: 300px;
+  }
+
+  .uc-action {
+    .uc-action-img-wrapper {
+
+      &.left {
+        left: $img-spacing-sm;
+      }
+
+      &.right {
+        right: $img-spacing-sm;
+      }
+    }
+
+    .uc-action-link {
+      padding: 3px 11px;
+    }
+  }
+}
+
+@media(max-width: 320px) {
+  .uc-action {
+    .uc-action-img-wrapper {
+
+      &.left {
+        left: -40px;
+      }
+
+      &.right {
+        right: -40px;
+      }
+    }
+
+  }
+}
